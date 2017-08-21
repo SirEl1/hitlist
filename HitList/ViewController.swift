@@ -73,7 +73,7 @@ class ViewController: UIViewController {
                 managedContext.delete(object)
             }
             
-            do {
+            do { // Save managedContext
                 try managedContext.save()
                 people.remove(at: todelete)
                 tableView.reloadData()
